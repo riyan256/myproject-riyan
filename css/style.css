@@ -1,4 +1,396 @@
-/* Minimal 10 Selector */
-body{
-    color: blue;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,300&family=Space+Mono:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Playball&family=Roboto+Mono:ital,wght@0,300;1,300&family=Space+Mono:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Playball&family=Roboto+Mono:ital,wght@0,300;1,300&family=Space+Mono:ital@1&family=Trispace:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Playball&family=Roboto+Mono:ital,wght@0,300;1,300&family=Space+Grotesk:wght@600&family=Space+Mono:ital@1&family=Trispace:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Kalam&family=Playball&family=Roboto+Mono:ital,wght@0,300;1,300&family=Space+Grotesk:wght@600&family=Space+Mono:ital@1&family=Trispace:wght@300&display=swap');
+
+body {
+    margin: 0;
 }
+
+#navbar {
+    display: flex;
+    width: 100%;
+    background-color: lightblue;
+    color: green;
+    font-family: 'Space Grotesk';
+    padding: 16px;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 10;
+}
+
+#nav-title {
+    flex-grow: 1;
+}
+
+.title-logo {
+    font-size: 24px;
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Playball', italic;
+}
+
+.title-logo:hover {
+    background-color: yellow;
+}
+
+#link-list {
+    list-style: none;
+    display: flex;
+    column-gap: 14px;
+    margin: 0;
+    margin-top: 4px;
+}
+
+#link-list a {
+    color: green;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+#link-list a:hover {
+    background-color: yellow;
+}
+
+#homepage {
+    position: relative;
+
+}
+
+#homepage-img {
+    width: 100%;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+}
+
+#homepage-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 35%;
+}
+
+.homepage-text1 {
+    margin: auto;
+    font-size: 72px;
+    font-family: 'Roboto Mono';
+}
+
+.homepage-text2 {
+    margin: auto;
+    font-size: 48px;
+    font-family: 'Trispace';
+}
+
+.homepage-intro {
+    margin: auto;
+    font-size: 32px;
+    font-family: 'Playball', italic;
+}
+
+#about {
+    display: flex;
+    position: relative;
+    padding: 5%;
+    bottom: 10%;
+}
+
+#about-content {
+    color: black;
+    padding: 50px;
+    bottom: 60%;
+    font-family: 'Trispace';
+    text-align: center;
+}
+
+.about-me {
+    padding: 50px;
+    top: 40%;
+    font-family: 'Roboto Mono';
+    text-align: center;
+}
+
+.foto-riyan {
+    width: 320px;
+    height: 320px;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: lightblue;
+    margin-top: 100px;
+    margin-right: 60px;
+}
+
+#education {
+    display: flex;
+    position: relative;     
+    padding: 5%;
+    bottom: 10%;
+}
+
+#education-content ol li{
+    color: black;
+    padding: 5px;
+    top: 5%;
+    list-style-type: circle;
+    font-family: 'Trispace';
+    font-size: 18px;
+    text-align: justify;
+}
+
+.educationme {
+    padding: 50px;
+    top: 40%;
+    font-family: 'Roboto Mono';
+    text-align: center;
+}
+
+.foto-education {
+    width: 320px;
+    height: 320px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: transparent;
+    float: right;
+    margin-top: 20px;
+    margin-right: 60px;
+}
+
+#experience {
+    display: flex;
+    position: relative;
+    padding: 5%;
+    bottom: 10%;
+}
+
+#experience-content ol li{
+    color: black;
+    padding: 5px;
+    top: 5%;
+    list-style-type: circle;
+    font-family: 'Trispace';
+    font-size: 18px;
+    text-align: justify;
+}
+
+.experienceme {
+    padding: 50px;
+    top: 40%;
+    font-family: 'Roboto Mono';
+    text-align: center;
+}
+
+.foto-experience {
+    width: 320px;
+    height: 320px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: transparent;
+    float: right;
+    margin-top: 20px;
+    margin-right: 60px;
+}
+
+#skills {
+    display: flex;
+    position: relative;
+    padding: 5%;
+    bottom: 10%;
+}
+
+#skills-content ol li{
+    color: black;
+    padding: 5px;
+    top: 5%;
+    list-style-type: circle;
+    font-family: 'Trispace';
+    font-size: 18px;
+    text-align: justify;
+}
+
+.skillsme {
+    padding: 50px;
+    top: 40%;
+    font-family: 'Roboto Mono';
+    text-align: center;
+}
+
+.foto-skills {
+    width: 320px;
+    height: 320px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: transparent;
+    float: right;
+    margin-top: 20px;
+    margin-right: 60px;
+}
+
+#hobby {
+    display: flex;
+    position: relative;
+    padding: 5%;
+    bottom: 10%;
+}
+
+#hobby-content ol li{
+    color: black;
+    padding: 5px;
+    top: 5%;
+    list-style-type: circle;
+    font-family: 'Trispace';
+    font-size: 18px;
+    text-align: justify;
+}
+
+.hobbyme {
+    padding: 50px;
+    top: 40%;
+    font-family: 'Roboto Mono';
+    text-align: center;
+}
+
+.foto-hobby {
+    width: 320px;
+    height: 320px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: transparent;
+    float: right;
+    margin-top: 20px;
+    margin-right: 60px;
+}
+
+#award {
+    display: flex;
+    position: relative;
+    padding: 5%;
+    bottom: 10%;
+}
+
+#award-content ol li {
+    color: black;
+    padding: 5px;
+    top: 5%;
+    list-style-type: circle;
+    font-family: 'Trispace';
+    font-size: 18px;
+    text-align: justify;
+}
+
+.awardme {
+    padding: 50px;
+    top: 40%;
+    font-family: 'Roboto Mono';
+    text-align: center;
+}
+
+.foto-piala {
+    width: 320px;
+    height: 320px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: transparent;
+    float: right;
+    margin-top: 20px;
+    margin-right: 60px;
+}
+
+#contact {
+    display: flex;
+    position: relative;
+    padding: 5%;
+    bottom: 10%;
+}
+
+#contact {
+    display: flex;
+    position: relative;
+    padding: 5%;
+    bottom: 10%;
+}
+
+#contact-content ol li{
+    color: black;
+    padding: 5px;
+    top: 5%;
+    list-style-type: circle;
+    font-family: 'Trispace';
+    font-size: 18px;
+    text-align: justify;
+}
+
+.contactme {
+    padding: 50px;
+    top: 40%;
+    font-family: 'Roboto Mono';
+    text-align: center;
+}
+
+.foto-contact {
+    width: 320px;
+    height: 320px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: transparent;
+    float: right;
+    margin-top: 20px;
+    margin-right: 60px;
+}
+
+#quotes {
+    display: flex;
+    position: relative;
+    padding: 5%;
+    bottom: 10%;
+}
+
+.foto-wb {
+    width: 320px;
+    height: 320px;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: lightblue;
+    float: right;
+    margin-top: 60px;
+    margin-right: 60px;
+}
+
+#quotes-content {
+    color: black;
+    padding: 50px;
+    top: 40%;
+    font-family: 'Roboto Mono';
+    text-align: center;
+}
+
+.quotestext-wb {
+    font-family: 'Italianno';
+    font-size: 38px;
+}
+
+.warren-buffet {
+    font-family: 'Italianno';
+    font-size: 30px;
+}
+
+.footer {
+    display: flex-end;
+    bottom: 20%;
+    width: 100%;
+    height: 60px;
+ }
+
+ .copyright {
+    font-size: 20px;
+    font-family: 'Trispace';
+    text-align: center;
+
+ }

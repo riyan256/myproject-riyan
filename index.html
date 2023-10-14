@@ -1,13 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Memberikan judul pada tab browser -->
+    <title>Riyan's Portfolio</title>
+    <!-- Menghubungkan file css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Menampilkan gambar icon pada tab browser -->
+    <link rel="shortcut icon" href="img/people.ico" type="image/x-icon" />
+    <!-- Menghubungkan file javascript -->
+    <script src="js/script.js"></script>
 </head>
 <body>
-    Final Project Batch 16
+    <header>
+        <!-- tab navigasi -->
+        <nav id="navbar">
+            <!-- judul dan navigasi homepage -->
+            <div id="nav-title">
+                <a href="#homepage" class="title-logo">Riyan's Portfolio</a>
+            </div>
+                <ul id="link-list">
+                    <!-- Navbar About Me -->
+                    <li>
+                        <a href="#about">About Me</a>
+                    </li>
+                    <!-- Navbar Education -->
+                    <li>
+                        <a href="#education">Education</a>
+                    </li>
+                    <!-- Navbar Experience -->
+                    <li>
+                        <a href="#experience">Experience</a>
+                    </li>
+                    <!-- Navbar Skills -->
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <!-- Navbar Hobby -->
+                    <li>
+                        <a href="#hobby">Hobby</a>
+                    </li>
+                    <!-- Navbar Award -->
+                    <li>
+                        <a href="#award">Award</a>
+                    </li>
+                    <!-- Navbar Contact Me -->
+                    <li>
+                        <a href="#contact">Contact Me</a>
+                    </li>
+                    <!-- Navbar Quotes -->
+                    <li>
+                        <a href="#quotes">Quotes</a>
+                    </li>
+                </ul>         
+        </nav>
+    </header>
+
+    <!-- tag-homepage -->
+    <section id="homepage">
+        <img id="homepage-img" src="img/city.jpg" alt="homepage" />
+        <div id="homepage-content">
+            <h1 class="homepage-text1" id="text1">Riyan's Portfolio</h1>
+            <h2 class="homepage-text2" id="text2">Frontend Developer</h2>
+            <h3 class="homepage-intro" id="text3">Hi, ini adalah website portfolioku</h3>
+    </section>
+
+    <!-- tag-about -->
+    <section id="about">
+        <img class="foto-riyan" src="img/riyan.jpg" alt="Riyan">
+        <div id="about-content">    
+        <h1 class="about-me">About Me</h1>
+        <p>Perkenalkan saya Riyan, saya adalah seorang pria yang secara pribadi masih berstatus sebagai single.
+            Saya adalah seorang frontend developer yang memiliki minat ketertarikan yang tinggi
+            dalam menekuni pembuatan Web Design. Dengan berbekal pengetahuan yang cukup
+            tinggi akan html, css, dan javascript, saya bersedia untuk bekerja sebagai Frontend
+            Developer.   
+        </p>
+        </div>
+    </section>
+
+    <!-- tag-education -->
+    <section id="education">
+        <img class="foto-education" src="img/education.png" alt="education" />
+        <div id="education-content">
+            <h1 class="educationme">Education</h1>
+            <ol>
+                <li>2007 - 2013 - SD Yunike Andreas</li>
+                <li>2013 - 2016 - SMP Mawar Saron</li>
+                <li>2016 - 2019 - SMK Setia Bhakti</li>
+            </ol>
+        </div>  
+    </section>
+
+    <!-- tag-experience -->
+    <section id="experience">
+        <img class="foto-experience" src="img/experience.jpg" alt="experience" />
+        <div id="experience-content">
+            <h1 class="experienceme">Experience</h1>
+            <ol>
+                <li>Staf Admin - Yayasan Dian Mandiri Tangerang : Juni - Agustus 2018</li>
+                <li>Assistant IT Support - SMP Dian Nusantara Tangerang : Juni - Oktober 2019</li>
+                <li>Magang IT Support - PT. Agro Citra Niaga : Juni - Desember 2021</li>
+                <li>Staf IT Support - Universitas Buddhi Dharma Tangerang : Juni 2022 - April 2023</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- tag-skills -->
+    <section id="skills">
+        <img class="foto-skills" src="img/skill.jpeg" alt="skills" />
+        <div id="skills-content">
+            <h1 class="skillsme">Skills</h1>
+            <ol>
+                <li>HTML --> Middle</li>
+                <li>CSS --> Basic</li>
+                <li>Javascript --> Middle</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- tag-hobby -->
+    <section id="hobby">
+        <img class="foto-hobby" src="img/hobby.jpg" alt="hobby" />
+        <div id="hobby-content">
+            <h1 class="hobbyme">Hobby</h1>
+            <ol>
+                <li>Membaca</li>
+                <li>Jalan-Jalan</li>
+                <li>Menonton Film</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- tag-award -->
+    <section id="award">
+        <img class="foto-piala" src="img/piala.png" alt="Piala" />
+        <div id="award-content">
+            <h1 class="awardme">Award</h1>
+            <ol>
+                <li>Juara 1 - Lomba Puisi SMK Setia Bhakti</li>
+                <li>Juara 3 - Lomba Cerdas Cermat SMA Bhakti Anindya</li>
+                <li>Juara 2 - Lomba Debat Bahasa Indonesia SMK Bonavita</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- tag-contact -->
+    <section id="contact">
+        <img class="foto-contact" src="img/contact.png" alt="contact" />
+        <div id="contact-content">
+            <h1 class="contactme">Contact</h1>
+            <ol>
+                <li>Github --> riyan256</li>
+                <li>email --> thelikethisriyan@gmail.com</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- tag-quotes -->
+    <section id="quotes">
+        <img class="foto-wb" src="img/warren-buffet.png" alt="Warren-Buffet">
+        <div id="quotes-content">
+            <h1>My Best Quotes</h1>
+            <h4 class="quotestext-wb">"Tidak perlu melakukan hal yang luar biasa untuk mendapatkan hasil yang luar biasa"</h4>
+            <h6 class="warren-buffet">(Warren Buffet)</h6>
+        </div>
+    </section>
+
+    <!-- tag-copyright -->
+    <div class="footer">
+        <p class="copyright">&copy; Final Project Hactive8 Prakerja Batch 16 by Riyan</p>
+    </div>
 </body>
 </html>
